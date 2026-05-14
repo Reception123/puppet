@@ -11,7 +11,6 @@ class role::irc {
     }
 
     include irc::pywikibot
-    include mediawiki::rename_bot
 
     irc::relaybot { 'relaybot':
         dotnet_version => '10.0',

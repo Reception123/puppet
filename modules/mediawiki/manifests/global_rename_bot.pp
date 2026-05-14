@@ -1,6 +1,6 @@
-class mediawiki::rename_bot (
-    String $bot_password,
-) {
+class mediawiki::rename_bot {
+    $bot_password = lookup('passwords::mediawiki::global_rename_bot')
+
     $bot_dir = '/usr/local/lib/global_rename_bot'
     $log_dir = '/var/log/global_rename_bot'
     $etc_dir = '/etc/global_rename_bot'
